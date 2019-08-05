@@ -1,0 +1,26 @@
+//String, char, int
+public class Box {
+	private Object item;
+
+	public Object getItem() {
+		return item;
+	}
+
+	public void setItem(Object item) {
+		this.item = item;
+	}
+	
+	public static void main(String[] args) {
+		Box b = new Box();
+		b.setItem(3);
+		System.out.println((int)b.getItem());
+		b.setItem("¾È³ç");
+		System.out.println(b.getItem());
+		b.setItem('°¡');
+		System.out.println(b.getItem());
+		b.setItem(5.7);
+		System.out.println(b.getItem());
+		
+	}
+	
+}

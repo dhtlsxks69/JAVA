@@ -1,0 +1,21 @@
+package protoss;
+
+class Animal {
+	
+}
+
+class Dog {
+	
+}
+
+class Cat {
+	
+}
+
+class Fish {
+	
+}
+
+public class BindApp2 {
+
+}

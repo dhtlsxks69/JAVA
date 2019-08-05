@@ -1,0 +1,15 @@
+
+public class BulgogiBurgerSet {
+	private BulgogiBurger bulgogiBurger;
+	private Coke cokr;
+	private FrechFired frechFired;
+	
+	public BulgogiBurgerSet(BulgogiBurger bulgogiBurger, Coke cokr, FrechFired frechFired) {
+		super();
+		this.bulgogiBurger = bulgogiBurger;
+		this.cokr = cokr;
+		this.frechFired = frechFired;
+	}
+	
+	
+}

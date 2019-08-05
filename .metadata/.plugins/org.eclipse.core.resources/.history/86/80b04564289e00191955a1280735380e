@@ -1,0 +1,29 @@
+package protoss;
+
+class Animal {
+	void sound(){
+		
+	}
+}
+
+class Dog extends Animal{
+	void sound(){
+		System.out.println("港港");
+	}
+}
+
+class Cat extends Animal{
+	void sound(){
+		System.out.println("具克");
+	}
+}
+
+class Fish extends Animal{
+	void sound(){
+		System.out.println("坏阐坏阐");
+	}
+}
+
+public class BindApp2 {
+
+}

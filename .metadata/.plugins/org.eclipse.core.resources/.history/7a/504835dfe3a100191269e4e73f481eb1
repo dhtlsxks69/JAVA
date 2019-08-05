@@ -1,0 +1,9 @@
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer();
+		Barista barista = new Barista();
+	}
+
+}

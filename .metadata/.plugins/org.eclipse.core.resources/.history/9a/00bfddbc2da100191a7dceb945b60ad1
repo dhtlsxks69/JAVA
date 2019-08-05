@@ -1,0 +1,14 @@
+
+class Account{
+	String account = "172-2034-22";
+	String password = "1234";
+}
+
+public class JsonTest {
+
+	public static void main(String[] args) {
+		String jsonString = "{account:172-2034-22, password:1234}";
+		System.out.println(jsonString);
+	}
+
+}

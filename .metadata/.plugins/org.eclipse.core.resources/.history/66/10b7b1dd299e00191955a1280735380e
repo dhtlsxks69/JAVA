@@ -1,0 +1,47 @@
+package protoss;
+
+interface Animal {
+	public abstract void sound();
+}
+
+class Dog implements Animal{
+	//부모가 가진 함수를 재정의 하는 것을 오버라이딩이라고 함.
+	//부모가 가진 함수를 재정의 하지 않아도 오버라이딩!!
+	void sound(){
+		System.out.println("멍멍");
+	}
+}
+
+class Cat implements Animal{
+	void sound(){
+		System.out.println("야옹");
+	}
+}
+
+class Fish implements Animal{
+	void sound(){
+		System.out.println("뻐끔뻐끔");
+	}
+}
+
+public class BindApp2 {
+	
+	public static void start(Animal a){
+		a.sound();
+	}
+	
+	public static void main(String[] args) {
+		start(new Fish());
+		start(new Cat());
+		start(new Dog());
+		
+//		Animal f = new Fish();
+//		f.sound();
+//		
+//		Animal c = new Cat();
+//		c.sound();
+//		
+//		Animal d = new Dog();
+//		d.sound();
+	}
+}

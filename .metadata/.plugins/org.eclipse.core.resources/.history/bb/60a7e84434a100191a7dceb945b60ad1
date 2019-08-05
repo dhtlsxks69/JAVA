@@ -1,0 +1,26 @@
+import org.json.simple.JSONObject;
+
+class Data {
+	int movie_count = 12499;
+	int limit = 3;
+	int page_number = 1;
+}
+
+class Respnse {
+	String status = "ok";
+	String status_message = "query was success";
+	Data data = new Data();
+}
+
+public class JsonTest2 {
+	
+	public static void main(String[] args) {
+		JSONObject js = new JSONObject();
+		js.put("status", "ok");
+		js.put("status_message", "query was success");
+		
+		
+		
+		System.out.println(js);
+	}
+}

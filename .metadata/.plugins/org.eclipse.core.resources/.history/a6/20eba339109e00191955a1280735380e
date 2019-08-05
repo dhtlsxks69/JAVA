@@ -1,0 +1,11 @@
+package protoss;
+
+public class ProtossApp {
+	public static void main(String[] args) {
+		Gateway gate1 = new Gateway();
+		Zealot z1 = gate1.makeZealot(); //Áú·µ »ý¼ºµÊ
+		Zealot z2 = gate1.makeZealot(); //Áú·µ »ý¼ºµÊ
+		Dragoon d1 = gate1.makeDragoon(); //µå¶ó±º »ý¼ºµÊ
+		Dragoon d2 = gate1.makeDragoon(); //µå¶ó±º »ý¼ºµÊ
+	}
+}

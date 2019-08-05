@@ -1,0 +1,23 @@
+package protoss;
+
+class Earth{
+	
+}
+
+class Asia extends Earth{ //상속
+	
+}
+
+class Korea extends Asia{ //상속
+	
+}
+
+class Daejeon extends Korea{ //상속
+	
+}
+
+public class BindApp {
+	public static void main(String[] args) {
+		Daejeon d = new Daejeon(); //대전은 한국을 상속받아서 new하면 4개의 메모리가 만들어짐
+	}
+}

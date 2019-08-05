@@ -1,0 +1,9 @@
+package Zerg;
+
+public interface Zerg {
+	String getName();
+	int getSt();
+	int getAttack();
+	int getArmor();
+	void setSt(int st);
+}

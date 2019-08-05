@@ -1,0 +1,22 @@
+package Zerg;
+
+public class ZergApp {
+	
+	//누가, 누구를
+	public static void attack(Zerg u1, Zerg u2){
+		//히드라 공격력 : 10
+		//울트라 공격력 : 30
+		//히드라, 울트라 방어력 : 1
+		int damage = u1.getAttack()-u2.getArmor(); 
+		u2.setSt(u2.getSt() - damage);
+	}
+	
+	public static void printUnit(Zerg u){
+		System.out.println(u.getName() + "의 체력은 " + u.getSt());
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

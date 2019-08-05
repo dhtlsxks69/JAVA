@@ -1,0 +1,9 @@
+package test;
+
+public class StarApp {
+	public static void main(String[] args) {
+		//new 지금 메모리에 할당(allocate)
+		Zealot z1 = new Zealot();
+		System.out.println(z1.attack);
+	}
+}

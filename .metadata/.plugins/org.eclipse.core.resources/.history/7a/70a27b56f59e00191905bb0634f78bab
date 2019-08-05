@@ -1,0 +1,11 @@
+package test;
+
+import java.net.URL;
+
+public class DownloadTest {
+	public static void main(String[] args) {
+		String url = "http://www.naver.com";
+		
+		URL obj = new URL(url);
+	}
+}

@@ -1,0 +1,11 @@
+package test;
+
+public class variableEx2 {
+	public static void main(String[] args) {
+		double d = 10.5;  //8byte
+		int num = 10;  //4byte
+		
+		d = num;
+		System.out.println(d);
+	}
+}

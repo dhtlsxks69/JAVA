@@ -1,0 +1,10 @@
+package protoss;
+
+public abstract class Protoss {
+	public abstract String getName();
+	public abstract int getSh();
+	public abstract int getSt();
+	public abstract int getAttack();
+	public abstract int getArmor();
+	public abstract void setSh(int sh);
+}

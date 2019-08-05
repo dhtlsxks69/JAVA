@@ -1,0 +1,12 @@
+
+public class Lotteria {
+
+	public static void main(String[] args) {
+		//¡÷πÆ
+		BulgogiBurger b1  = new BulgogiBurger();
+		Coke c1 = new Coke();
+		FrechFired f1 = new FrechFired();
+		
+	}
+
+}

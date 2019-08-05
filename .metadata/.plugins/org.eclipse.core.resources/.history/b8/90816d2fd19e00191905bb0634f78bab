@@ -1,0 +1,23 @@
+public class StarGame {
+	
+	class Protoss implements Starcraft{
+		
+	}
+	
+	class Terran implements Starcraft{
+		
+	}
+	
+	class Zerg implements Starcraft{
+		
+	}
+	
+	//마린 -> 히드라 (히드라 -> 마린)
+	public void attack(Starcraft u1, Starcraft u2){
+		
+	}
+	
+	public static void main(String[] args){
+		
+	}
+}

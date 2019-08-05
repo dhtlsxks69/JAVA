@@ -1,0 +1,23 @@
+package ch06;
+
+public class Coin {
+	
+	static void start(int coin){
+		int money = null;
+		
+		final int money = 2680; //상수
+		int rest_money = money;  //변수의 초기화
+		int count;  //변수의 선언
+		
+		count = rest_money / coin;
+		System.out.println(coin + "원 : "+count);
+		rest_money = rest_money%coin;
+		System.out.println("남은금액 : "+rest_money);
+		
+		return money;
+	}
+	
+	public static void main(String[] args) {
+		Coin.start();
+	}
+}

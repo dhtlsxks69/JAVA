@@ -1,0 +1,11 @@
+class President {
+	public President() {
+		System.out.println("대통령이 만들어졌습니다.");
+	}
+}
+
+public class App {	
+	public static void main(String[] args) {
+		President p = new President();
+	}
+}

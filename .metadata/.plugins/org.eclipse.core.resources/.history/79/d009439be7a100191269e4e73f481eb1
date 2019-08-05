@@ -1,0 +1,7 @@
+
+public interface CoffeeList {
+	public static final String AMERICANO = "아메리카노";
+	String CAFERATTE = "카페라떼";
+	String MACIYATO = "마끼야또";
+	String CAFEMOCA = "카페모카";
+}

@@ -1,0 +1,15 @@
+//쓰레드는 타겟이 필요함(메소드)
+//타겟은 Runnable 타입이어야 한다.
+class Num implements Runnable{
+	
+}
+
+//현재 쓰레드는 메인쓰레드 1개!!
+public class Thread {
+	public static void main(String[] args) {
+		System.out.println(1);
+		System.out.println(2);
+		System.out.println(3);
+		System.out.println(4);
+	}
+}

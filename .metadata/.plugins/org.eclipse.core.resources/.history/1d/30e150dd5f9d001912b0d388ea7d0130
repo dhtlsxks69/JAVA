@@ -1,0 +1,7 @@
+package test;
+
+public class LolApp {
+	public static void main(String[] args) {
+		Timo t = new Timo(); //티모가 heap에 만들어짐.
+	}
+}

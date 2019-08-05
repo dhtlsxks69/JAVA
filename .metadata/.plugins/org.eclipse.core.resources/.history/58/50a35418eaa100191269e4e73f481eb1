@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer();
+		Barista barista = new Barista();
+		
+		Menu menu = barista.makeMenu();
+		
+		//커피를 주문하라!!
+		customer.order(CoffeeList.CAFEMOCA, menu, barista);
+	}
+
+}

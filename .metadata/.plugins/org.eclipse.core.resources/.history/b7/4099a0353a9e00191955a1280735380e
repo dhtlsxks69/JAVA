@@ -1,0 +1,37 @@
+package protoss;
+
+class People {
+	String getName(){
+		return null;
+	}
+}
+
+class Middleline extends People{
+	String name = "중선";
+	
+	@Override
+	String getName() {
+		return name;
+	}
+}
+
+class One extends People{
+	String name = "한결";
+	
+	@Override
+	String getName() {
+		return name;
+	}
+}
+
+public class PeopleApp {
+	
+	static void start(People p){
+		System.out.println(p.getName());
+	}
+	
+	public static void main(String[] args) {
+		start(new One());
+		start(new Middleline());
+	}
+}

@@ -1,0 +1,11 @@
+//1. 쓰레드는 타겟(run메소드)가 필요함.
+//2. 타겟은 Runnable 타입이어야 함.
+class run implements Runnalble{
+	
+}
+
+public class MyApp {
+	public static void main(String[] args) {
+		
+	}
+}

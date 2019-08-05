@@ -1,0 +1,52 @@
+import java.util.HashMap;
+
+import org.json.simple.JSONObject;
+
+import net.nurigo.java_sdk.api.Message;
+import net.nurigo.java_sdk.exceptions.CoolsmsException;
+
+public class MessageApp {
+	
+	public static void messageSend(String phone, String movieList){
+		String api_key = "NCSKORBWDYT1CQSB";
+	    String api_secret = "B8Q5PXWVNEIXVBA8M0GOPCKQHZ7X4CLU";
+	    Message coolsms = new Message(api_key, api_secret);
+
+	    // 4 params(to, from, type, text) are mandatory. must be filled
+	    HashMap<String, String> params = new HashMap<String, String>();
+	    params.put("to", phone);
+	    params.put("from", "01023548424");
+	    params.put("type", "SMS");
+	    params.put("text", movieList);
+	    params.put("app_version", "test app 1.2"); // application name and version
+
+	    try {
+	      JSONObject obj = (JSONObject) coolsms.send(params);
+	      System.out.println(obj.toString());
+	    } catch (CoolsmsException e) {
+	      System.out.println(e.getMessage());
+	      System.out.println(e.getCode());
+	    }
+	}
+
+	public static void main(String[] args) {
+		String phone[] = new String[3];
+		phone[0] = "01023548424";
+		phone[1] = "01052167642";
+		phone[2] = "010asdfasd";
+		
+		Response2 res = MovieApp.getMovieList();
+		
+		StringBuilder movieList = new StringBuilder();
+		movieList.append(res.data.movies.get(0).like_count+"\n");
+		movieList.append(res.data.movies.get(1).like_count+"\n");
+		movieList.append(res.data.movies.get(2).like_count+"\n");
+		
+		for (int i = 0; i < phone.length; i++) { //3¹ÙÄû
+			messageSend(phone[i], movieList.toString());
+		}
+		
+		System.out.println(movieList);
+	}
+
+}

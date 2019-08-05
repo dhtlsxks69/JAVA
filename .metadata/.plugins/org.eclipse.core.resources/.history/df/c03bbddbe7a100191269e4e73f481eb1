@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer();
+		Barista barista = new Barista();
+		
+		List<String> list = new ArrayList<>();
+		list.add("아메리카노");
+		list.add("카페라떼");
+		list.add("마끼야또");
+		list.add("카페모카");
+		
+		Menu menu = new Menu(list);
+		
+		//커피를 주문하라!!
+		customer.order(CoffeeList.MACIYATO, menu, barista);
+	}
+
+}

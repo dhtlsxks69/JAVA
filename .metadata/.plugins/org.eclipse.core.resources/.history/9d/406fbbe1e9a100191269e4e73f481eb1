@@ -1,0 +1,8 @@
+
+public class Barista {
+	//커피를 만들어라
+	public Coffee makeCoffee(String name) {
+		Coffee coffee = new Coffee(name);
+		return coffee;
+	}
+}

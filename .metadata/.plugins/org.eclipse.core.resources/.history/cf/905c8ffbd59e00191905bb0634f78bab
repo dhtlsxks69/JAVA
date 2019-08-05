@@ -1,0 +1,11 @@
+package terran;
+
+import starcraft.Starcraft;
+
+public abstract class Terran implements Starcraft{
+	public abstract void setSt(int st);
+	
+	public void play(){
+		
+	}
+}

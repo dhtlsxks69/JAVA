@@ -1,0 +1,12 @@
+package protoss;
+
+public class Porge {
+	public void upgradeAttack(){
+		Zealot.attack++;
+		Dragoon.attack++;
+		DarkTempler.attack++;
+	}
+	public void upgradeArmor(){
+		
+	}
+}

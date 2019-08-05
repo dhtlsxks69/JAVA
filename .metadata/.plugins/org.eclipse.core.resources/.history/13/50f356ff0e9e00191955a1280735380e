@@ -1,0 +1,9 @@
+package protoss;
+
+public class ProtossApp {
+	public static void main(String[] args) {
+		Gateway gate1 = new Gateway();
+		Zealot z1 = gate1.makeZealot(); //龙返 积己凳
+		Zealot z2 = gate1.makeZealot(); //龙返 积己凳
+	}
+}

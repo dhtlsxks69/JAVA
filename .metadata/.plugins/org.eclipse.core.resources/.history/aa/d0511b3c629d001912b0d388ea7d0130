@@ -1,0 +1,21 @@
+package test;
+
+public class Timo {
+	final String name = "티모";
+	String username;
+	int attack;
+	int armor;
+	String spell;
+	
+	public Timo(){
+		
+	}
+	
+	//생성자 (기본생성자는 생략되어 있
+	public Timo(String username, int attack, int armor, String spell){
+		this.username = username;
+		this.attack = attack;
+		this.armor = armor;
+		this.spell = spell;
+	}
+}

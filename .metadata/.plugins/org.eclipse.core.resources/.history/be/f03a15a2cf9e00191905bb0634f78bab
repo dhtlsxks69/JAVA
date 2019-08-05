@@ -1,0 +1,9 @@
+package Zerg;
+
+public abstract class Zerg {
+	public abstract String getName();
+	public abstract int getSt();
+	public abstract int getAttack();
+	public abstract int getArmor();
+	public abstract void setSt(int st);
+}

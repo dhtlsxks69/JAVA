@@ -1,0 +1,16 @@
+package test;
+
+public class OidTest {
+	
+	public static String makeNumber(String oid){
+		//1. oid를 임시변수 int temp에 담고
+		//2. temp를 1증가 시키고
+		//3. oid에 "00" + temp = 002 집어 넣고
+		//4. oid를 return 하면 됨.
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		makeNumber("001");
+	}
+}

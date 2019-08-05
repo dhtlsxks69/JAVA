@@ -1,0 +1,22 @@
+
+public class Utils {
+	public static void main(String[] args) {
+		String a = "A";
+		String b = "가";
+		
+		System.out.println(a.length());
+		System.out.println(a.getBytes().length);
+		
+		System.out.println(b.length());
+		System.out.println(b.getBytes().length);
+		
+		String content1 = "버퍼 캐시를 이용하여 처리하는 방식과 직접 디스크에 접근하여 데이터를 접근하는 방식에 차이는 무엇인지 알아보자. 논리적 I/O 와 물리적 I/O 오라클에";
+		System.out.println(content1.length());
+		
+		String content2 = "오라클 버퍼캐시 hit ratio를 저하시키는 쿼리를 찾을때 사용합니다. --buffer cache hit ratio select buffer_gets,disk_reads,executions";
+		System.out.println(content2.length());
+		
+		String content3 = "read) - 오라클에서 I/O는 블록단위 When? - 메모리 버퍼캐시에서 버퍼블록을 액세스 할때 - 데이터파일에 저장된 데이터 블록을 DB 버퍼캐시에 적재할때";
+		System.out.println(content3.length());
+	}
+}

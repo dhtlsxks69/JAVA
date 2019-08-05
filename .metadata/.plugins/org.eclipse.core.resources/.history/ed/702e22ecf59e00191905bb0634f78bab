@@ -1,0 +1,16 @@
+package test;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class DownloadTest {
+	public static void main(String[] args) {
+		String url = "http://www.naver.com";
+		
+		try {
+			URL obj = new URL(url);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+	}
+}

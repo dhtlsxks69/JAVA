@@ -1,0 +1,20 @@
+//1. 쓰레드는 타겟(run메소드)가 필요함.
+//2. 타겟은 Runnable 타입이어야 함.
+class Car implements Runnable {
+	@Override
+	public void run() {
+		for (int i = 0; i < 300; i++) {
+			System.out.println("새로운 쓰레드 : " + i);
+		}
+	}
+}
+
+// 3. 쓰레드 객체를 생성하고 타겟을 지정해줌.
+// 4. start() 메소드 호출(시스템 콜백)
+public class MyApp {
+	public static void main(String[] args) {
+		for (int i = 0; i < 300; i++) {
+			System.out.println("메인 쓰레드 : " + i);
+		}
+	}
+}

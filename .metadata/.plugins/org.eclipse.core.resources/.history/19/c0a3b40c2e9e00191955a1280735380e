@@ -1,0 +1,9 @@
+package protoss;
+
+public interface Protoss {
+	void getName();
+	void getSh();
+	void getSt();
+	void getAttack();
+	void getArmor()
+}

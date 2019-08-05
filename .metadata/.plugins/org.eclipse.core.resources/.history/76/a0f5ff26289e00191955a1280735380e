@@ -1,0 +1,23 @@
+package protoss;
+
+class Animal {
+	void sound(){
+		
+	}
+}
+
+class Dog {
+	
+}
+
+class Cat {
+	
+}
+
+class Fish {
+	
+}
+
+public class BindApp2 {
+
+}

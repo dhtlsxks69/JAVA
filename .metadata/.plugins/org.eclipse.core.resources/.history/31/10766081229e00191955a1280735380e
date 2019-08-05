@@ -1,0 +1,21 @@
+package protoss;
+
+class Earth{
+	
+}
+
+class Asia{
+	
+}
+
+class Korea{
+	
+}
+
+class Daejeon{
+	
+}
+
+public class BindApp {
+
+}

@@ -1,0 +1,9 @@
+package terran;
+
+public interface Terran {
+	String getName();
+	int getSt();
+	int getAttack();
+	int getArmor();
+	void setSt(int st);
+}

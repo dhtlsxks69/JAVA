@@ -1,0 +1,9 @@
+package terran;
+
+public abstract class Terran {
+	public abstract String getName();
+	public abstract int getSt();
+	public abstract int getAttack();
+	public abstract int getArmor();
+	public abstract void setSt(int st);
+}

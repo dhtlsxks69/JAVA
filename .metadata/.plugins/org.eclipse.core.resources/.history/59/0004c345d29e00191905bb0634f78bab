@@ -1,0 +1,15 @@
+package terran;
+
+import starcraft.Starcraft;
+
+public abstract class Terran implements Starcraft{
+	public abstract String getName();
+	public abstract int getSt();
+	public abstract int getAttack();
+	public abstract int getArmor();
+	public abstract void setSt(int st);
+	
+	public void play(){
+		
+	}
+}

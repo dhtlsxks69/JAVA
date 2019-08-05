@@ -1,0 +1,11 @@
+package Zerg;
+
+import starcraft.Starcraft;
+
+public abstract class Zerg implements Starcraft{
+	public abstract void setSt(int st);
+	
+	public void play(){
+		
+	}
+}

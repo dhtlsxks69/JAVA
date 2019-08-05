@@ -1,0 +1,9 @@
+package test;
+
+public class LolApp {
+	public static void main(String[] args) {
+		
+		//타입, 변수, new키워드, 생성자호출
+		Timo t = new Timo(); //티모가 heap에 만들어짐.
+	}
+}

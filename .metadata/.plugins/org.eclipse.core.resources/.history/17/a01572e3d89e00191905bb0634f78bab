@@ -1,0 +1,43 @@
+package starcraft;
+
+import Zerg.Hatchery;
+import Zerg.Hydra;
+import Zerg.Zerg;
+import terran.Barrack;
+import terran.Marine;
+
+public class StarGame {
+	
+	//마린 -> 히드라 (히드라 -> 마린)
+	public static void attack(Starcraft u1, Starcraft u2){
+		int damage = u1.getAttack() - u2.getArmor();
+		
+		//try-catch는 실행시 오류가 생길때 사용
+		try {
+			Zerg z = (Zerg)u2;
+			z.setSt(u2.getSt() - damage);
+		} catch (Exception e) {
+			try {
+				Terran t = (Terran)u2;
+				t.setSt(u2.getSt() - damage);
+			} catch (Exception e2) {
+			}
+		}
+		
+	}
+	
+	public static void main(String[] args){
+		Barrack ba1 = new Barrack();
+		Marine m1 = ba1.makeMarine();
+		
+		Hatchery ht1 = new Hatchery();
+		Hydra h1 = ht1.makeHydra();
+		
+		attack(m1, h1);
+		
+		System.out.println(h1.getSt());
+		
+		attack(h1, m1);
+		
+	}
+}

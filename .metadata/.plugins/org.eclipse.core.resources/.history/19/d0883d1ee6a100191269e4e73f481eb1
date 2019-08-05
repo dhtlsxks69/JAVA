@@ -1,0 +1,19 @@
+import java.util.List;
+
+public class Menu {
+	private List<String> items;
+	
+	public Menu(List<String> items) {
+		this.items = items;
+	}
+	
+	public String choose(String name) {
+		for (String item : items) { //4개
+			if(item.equals(name)) {
+				return item;
+			}
+		}
+		
+		return "없는메뉴";
+	}
+}

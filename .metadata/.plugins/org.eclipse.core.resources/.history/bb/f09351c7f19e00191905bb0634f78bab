@@ -1,0 +1,19 @@
+package craw;
+
+public class Utils {
+	public static String makeNumber(String input){
+
+			int temp = Integer.parseInt(input);
+
+			temp++;
+			int len = input.length() - (temp+"").length();
+			String zero = "";
+			for(int i = 0; i<len; i++){
+				zero += "0";
+			}
+			
+			input = zero + temp;
+			
+			return input;
+	}
+}

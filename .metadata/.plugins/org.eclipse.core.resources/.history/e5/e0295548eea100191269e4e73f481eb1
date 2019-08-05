@@ -1,0 +1,7 @@
+
+public class Cashier {
+	public Coffee makeCoffee(String name) {
+		Coffee coffee = new Coffee(name);
+		return coffee;
+	}
+}

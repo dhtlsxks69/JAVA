@@ -1,0 +1,10 @@
+package test;
+
+//Zealot 자료형
+public class Zealot {
+	int attack = 10;
+	int armor = 5;
+	final String name = "질럿"; //4byte  상수
+	int hp = 100;
+	int sh = 100;
+}

@@ -1,0 +1,23 @@
+package test;
+
+public class Timo {
+	final String name = "티모";
+	String username;
+	static int attack;
+	int armor;
+	String spell;
+	
+	public Timo(){
+		//생성자가 이미 생성되어 있어서 실행이 안되기 떄문에 하나 더 만들어 주는데 생성자는 실행되지 않는다.
+	}
+	
+	//생성자 (기본생성자는 생략되어 있다.)
+	//this는 객체가 들고 있는 변수
+	public Timo(String username, int attack, int armor, String spell){
+		this.username = username;
+//		this.attack = attack;
+		Timo.attack = attack;
+		this.armor = armor;
+		this.spell = spell;
+	}
+}

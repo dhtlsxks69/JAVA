@@ -1,0 +1,23 @@
+
+class Info {
+	String name = "ø¿ªÛ»∆";
+	String phone = "01023548424";
+}
+
+class Account {
+	String account = "172-2034-22";
+	String password = "1234";
+	
+	Info info = new Info();
+	
+	String time[] = {"2019-07-01", "2019-07-03", "2019-07-05"};
+}
+
+public class JsonTest {
+
+	public static void main(String[] args) {
+		String jsonString = "{\"account\":\"172-2034-22\", \"password\":\"1234\", {\"name\":\"ø¿ªÛ»∆\", \"phone\":\"01023548424\"}, [{\"time\":\"2019-07-01\"}, {\"time\":\"2019-07-03\"}, {\"time\":\"2019-07-05\"}]}";
+		System.out.println(jsonString);
+	}
+
+}

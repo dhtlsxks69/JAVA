@@ -1,0 +1,25 @@
+package test;
+
+public class OidTest {
+	
+	public static String makeNumber(String oid){
+		//1. oid를 임시변수 int temp에 담고
+//		int temp = Integer.parseInt(oid);
+//		
+//		//2. temp를 1증가 시키고
+//		temp++;
+//		
+//		//3. oid에 "00" + temp = 002 집어 넣고
+//		oid = "00" + temp;
+//		
+		//4. oid를 return 하면 됨.
+		int temp = 1;
+		
+		return null;
+	}
+	
+	public static void main(String[] args) {
+//		makeNumber("001");
+		System.out.println(oid);
+	}
+}

@@ -1,0 +1,12 @@
+package ch06;
+
+public class CoffeeMachine {
+	
+	static  void coffeecheck() {
+		System.out.println("정상 작동되고 있습니다.");
+	}
+	
+	public static void main(String[] args) {
+		CoffeeMachine.coffeecheck();
+	}
+}

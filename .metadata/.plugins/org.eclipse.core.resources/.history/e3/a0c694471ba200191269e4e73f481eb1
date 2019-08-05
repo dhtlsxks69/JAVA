@@ -1,0 +1,19 @@
+
+public class BulgogiBurgerSet {
+	private BulgogiBurger bulgogiBurger;
+	private Coke coke;
+	private FrechFired frechFired;
+	
+	public BulgogiBurgerSet(BulgogiBurger bulgogiBurger, Coke cokr, FrechFired frechFired) {
+		super();
+		this.bulgogiBurger = bulgogiBurger;
+		this.cokr = cokr;
+		this.frechFired = frechFired;
+	}
+	
+	public int getPrice() {
+		int price = bulgogiBurger.getPrice() + coke.getPrice() + frechFired.getPrice() - 1000;
+		return price;
+	}
+	
+}

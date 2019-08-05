@@ -1,0 +1,38 @@
+package test;
+
+public class OidTest {
+	
+	public static String makeNumber(String input){
+		//1. oid를 임시변수 int temp에 담고
+		int temp = Integer.parseInt(input);
+		
+		//2. temp를 1증가 시키고
+		temp++;
+		//len은 0의 개수
+		int len = input.length() - (temp+"").length();
+		String zero = "";
+		for(int i = 0; i<len; i++){
+			zero += "0";
+		}
+		
+		//3. oid에 "00" + temp = 002 집어 넣고
+		input = zero + temp;
+		
+		//4. oid를 return 하면 됨.
+		return input;
+	}
+	
+	public static String makeNumber2(String input){
+		int temp = Integer.parseInt(input);
+		temp++;
+		String s = String.format("%03d", temp);
+		return s;
+	}
+	
+	public static void main(String[] args) {
+		String oid = makeNumber("012");
+		System.out.println(oid);
+		String s = makeNumber2("23");
+		System.out.println(s);
+	}
+}

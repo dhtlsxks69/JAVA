@@ -1,0 +1,10 @@
+package protoss;
+
+//오브젝트(객체)는 상태와 행동을 가진다.
+public class Zealot {
+	public Zealot() {
+		System.out.println("My Life Aior");
+	}
+	
+	final String name = "질럿";
+}

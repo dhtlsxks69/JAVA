@@ -1,0 +1,17 @@
+
+public class Response2 {
+	String status;
+	String status_message;
+	Data data;
+}
+
+class Data {
+	int movie_count;
+	int limit;
+	int page_number;
+	
+}
+
+class Movie {
+	
+}

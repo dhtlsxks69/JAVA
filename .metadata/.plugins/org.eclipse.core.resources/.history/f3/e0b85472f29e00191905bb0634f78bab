@@ -1,0 +1,12 @@
+package craw;
+
+public class CrawTest {
+
+	public static void main(String[] args) {
+		
+		String oid = "001";
+		String aid = "0000000001";
+		String url = "https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=100&oid=" + oid + "&aid=" + aid;
+	}
+
+}

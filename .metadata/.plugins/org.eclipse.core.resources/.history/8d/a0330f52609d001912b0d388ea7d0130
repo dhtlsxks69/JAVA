@@ -1,0 +1,13 @@
+package test;
+
+public class Timo {
+	final String name = "티모";
+	String username;
+	int attack;
+	int armor;
+	
+	//생성자 (기본생성자는 생략되어 있다.)
+	public Timo(){
+		System.out.println("티모가 생성되었습니다.");
+	}
+}

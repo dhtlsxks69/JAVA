@@ -1,0 +1,16 @@
+package starcraft;
+public class StarGame {
+	
+	//마린 -> 히드라 (히드라 -> 마린)
+	public void attack(Starcraft u1, Starcraft u2){
+		String getName();
+		int getSt();
+		int getAttack();
+		int getArmor();
+		
+	}
+	
+	public static void main(String[] args){
+		
+	}
+}

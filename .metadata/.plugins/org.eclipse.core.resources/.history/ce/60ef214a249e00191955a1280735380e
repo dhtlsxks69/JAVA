@@ -1,0 +1,25 @@
+package protoss;
+
+class Earth{
+	String check = "최구부모";
+	String name = "지구";
+}
+
+class Asia extends Earth{ //상속
+	String name = "아시아";
+}
+
+class Korea extends Asia{ //상속
+	String name = "한국";
+}
+
+class Daejeon extends Korea{ //상속
+	String name = "대전";
+}
+
+public class BindApp {
+	public static void main(String[] args) {
+		Asia d = new Daejeon();
+		System.out.println(d.name);
+	}
+}

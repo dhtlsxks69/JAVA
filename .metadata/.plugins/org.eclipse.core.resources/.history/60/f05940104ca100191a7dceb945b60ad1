@@ -1,0 +1,36 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+
+import javax.net.ssl.HttpsURLConnection;
+
+public class MovieApp {
+
+	public static void main(String[] args) {
+		String url = "https://yts.lt/api/v2/list_movies.json?limit=3&page=1&sort_by=rating&order_by=desc";
+
+		try {
+			URL obj = new URL(url);
+			HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
+			con.setRequestProperty("User-Agent", "Mozilla/5.0");
+
+			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream(), "EUC-KR"));
+
+			String input;
+			StringBuilder sb = new StringBuilder();
+
+			while ((input = in.readLine()) != null) {
+				sb.append(input);
+			}
+			in.close();
+
+			String jsonString = sb.toString();
+			System.out.println(jsonString);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

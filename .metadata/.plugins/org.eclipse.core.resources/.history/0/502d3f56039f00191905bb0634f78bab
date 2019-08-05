@@ -1,0 +1,21 @@
+package test;
+
+import java.io.InputStream;
+
+public class JavaIOTest {
+	//stream이랑 수도꼭지를 생각하면 된다. 수도꼭지를 틀면 물이
+	//나오고 수도꼭지를 잠그면 물이 나오지 않는다.
+	//통신을 하기 위해서는 스트림을 달면 된다.
+	//스트림이란 물의 흐름이라고 할 수 있다.
+	public static void main(String[] args) {
+		InputStream in = System.in;
+		
+		try {
+			int data = in.read();
+			System.out.println(data);
+		} catch (Exception e) {
+			
+		}
+	}
+
+}

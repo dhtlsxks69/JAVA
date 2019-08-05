@@ -1,0 +1,17 @@
+package craw;
+
+public class Utils {
+	public static String makeOid(String input){
+		int temp = Integer.parseInt(input);
+		temp++;
+		String s = String.format("%03d", temp);
+		return s;
+	}
+	
+	public static String makeAid(String input){
+		int temp = Integer.parseInt(input);
+		temp++;
+		String s = String.format("%010d", temp);
+		return s;
+	}
+}
